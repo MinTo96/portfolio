@@ -157,6 +157,11 @@ p {
   text-align: center;
 }
 
+#home.home--dark {
+  transition: all 1s ease;
+  opacity: 0.1;
+}
+
 .home__avatar {
   width: 250px;
   height: 250px;
