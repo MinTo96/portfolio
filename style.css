@@ -157,11 +157,6 @@ p {
   text-align: center;
 }
 
-#home.home--dark {
-  transition: all 1s ease;
-  opacity: 0.1;
-}
-
 .home__avatar {
   width: 250px;
   height: 250px;
@@ -488,6 +483,28 @@ p {
   transform: scale(1.2);
   transition: all var(--animation-duration) ease;
   color: var(--color-yellow);
+}
+
+/* Scroll */
+
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
